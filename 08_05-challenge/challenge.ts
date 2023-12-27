@@ -1,4 +1,4 @@
-const myFunction = (objectWithName: any) => {
+const myFunction= <InputParam extends {name: string}>(objectWithName: InputParam): InputParam => {
   return {
     ...objectWithName,
   };
